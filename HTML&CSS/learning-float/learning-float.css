@@ -1,0 +1,56 @@
+.wrap {
+  width: 650px;
+  margin: 50px auto;
+  /* overflow: hidden; */
+}
+
+h1 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+  /* width: 50%; */
+}
+/* text-align은 블록요소를 중앙배치 시켜주지 않는다 */
+/* width를 50%로 적용해보면 적용된 너비 안에서 글씨가 중앙으로 배치 된다 */
+
+.wrap2 {
+  text-align: center;
+}
+/* 인라인요소는 부모요소에 text-align을 적용하면 중앙으로 배치 된다 */
+/* a요소에 text-align: center;를 적용해도 중앙으로 배치 안 된다 */
+
+a {
+  /* text-align: center; */
+  text-decoration: none;
+  color: hsl(0, 0%, 15%);
+  font-size: 32px;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background: gray;
+}
+
+.left {
+  width: 30%;
+  height: 100px;
+  background: yellow;
+  float: left;
+}
+
+.right {
+  width: 70%;
+  height: 100px;
+  background: yellowgreen;
+  float: left;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  background: crimson;
+  clear: both;
+}
+/* float속성 적용으로 선택자.footer가 안 보이자 clear속성 사용! */
+/* 부모요소에 overflow: hidden; 적용은??? */
