@@ -85,3 +85,7 @@ a.highlight {
   font-size: 3rem;
   display: none;
 }
+
+.bg-blue {
+  background-color: blueviolet;
+}
