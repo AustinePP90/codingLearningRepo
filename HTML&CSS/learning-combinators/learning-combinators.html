@@ -23,6 +23,20 @@
     <div><p>body > div > p combinators</p></div>
     <p>body > p combinators</p>
 
-    <footer>footer combinators</footer>
+    <footer>
+      <p>footer combinators</p>
+      <div>
+        <p>footer combinators</p>
+        <!--footer의 자손중 첫번째 p -->
+        <p>footer combinators</p>
+        <!-- footer의 자손중 두번째 자손인 p -->
+        <div>
+          <p>footer combinators</p>
+          <!-- footer의 자손의 자손중 첫번째 p -->
+          <p>footer combinators</p>
+          <!-- footer의 자손의 자손중 두번째 자손인 p -->
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

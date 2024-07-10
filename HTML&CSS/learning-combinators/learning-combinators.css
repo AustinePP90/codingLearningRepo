@@ -2,6 +2,7 @@ main p {
   background-color: yellow;
 }
 /* 조상 결합자 - 하위 모든 요소에 적용 할 수 있다 */
+/* 자손의 자손의 자손의 자손... 모두 가능! */
 /* body main, body div, body p 모두 적용 된다  */
 /* 모든! p요소에 적용(자식, 자손 모두 적용) */
 
@@ -22,7 +23,23 @@ main > p:nth-of-type(1) {
 main > p:nth-child(2) {
   color: #fff;
 }
-/* main의 두번째 자식인 p를 선택!*/
+/* main의 두번째 자식인 p를 선택! */
 /* main의 자식 중에서 두번째 순서에 오는 p를 선택 */
 /* main의 첫번째 자식은 div이다 -> main > div:nth-child(1)이 맞는 선택자 */
 /* main > p:nth-child(1)은 아무것도 선택되지 않는다 */
+
+/* ------------------------------------------------------------------------------ */
+
+footer p:nth-of-type(1) {
+  background-color: royalblue;
+}
+/* 조상 결합자 - 하위 모든 요소에 적용 할 수 있다 */
+/* footer의 자식중 첫번째 p를 선택 */
+/* footer의 자손중!!! 첫번째 p도 선택 */
+
+footer p:nth-of-type(2) {
+  background-color: teal;
+}
+/* 조상 결합자 - 하위 모든 요소에 적용 할 수 있다 */
+/* footer의 두번째 자식인 p를 선택 */
+/* footer의 두번째 자손인!!! p를 선택 */
