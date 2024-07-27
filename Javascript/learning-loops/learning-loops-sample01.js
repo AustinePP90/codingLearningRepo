@@ -7,12 +7,13 @@ const numberInput = document.getElementById("user-number");
 function calInputNumber() {
   const numberInputValue = numberInput.value; // "click" event 발생 후 일어나야 함
 
+  // button 클릭하면 input number value 값 0에서 입력 값까지 모두 더함
   let sumNum = 0;
-
   for (let i = 0; i <= numberInputValue; i++) {
     sumNum += i;
   }
 
+  // 더한 값을 결과창에 보여주기
   calOutput.innerHTML = sumNum;
   calOutput.style.display = "block";
 }
@@ -56,9 +57,12 @@ function displayInfo() {
   userDataList.innerHTML = ""; // ""가 없으면 userData가 계속 만들어진다. "click" 이벤트의 시작을 빈칸으로 만드는 작업!!!
 
   for (const key in userData) {
+    // li 요소 생성
     const listEle = document.createElement("li");
+    // li 요소에 userData 넣기
     const dataResult = key + ": " + userData[key];
     listEle.textContent = dataResult;
+    // ul 요소에 li 요소 넣기
     userDataList.append(listEle);
   }
 }
